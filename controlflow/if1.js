@@ -6,6 +6,6 @@
 //     console.log(typeof("2"));
     
 // }
-var1=null??" abc "??20;
+var1=10??null??null;
 console.log(var1);
 
