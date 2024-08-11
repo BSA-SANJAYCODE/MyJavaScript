@@ -20,6 +20,36 @@
     <div >
         <h1 id="title" class="heading">Dom Learning <span style="display:none;">with me</span></h1>
         <p id="para">Lorem ipsum dolor sit amet.</p>
+        <h2>Hello MATHURA</h2>
+        <h2 class="abc">Hello HARIDWAR</h2>
+        <h2>Hello AGRA</h2>
+        <h2>Hello DELHI</h2>
+        <h2>Hello GWALIOR</h2>
+        <ul>
+            <li class="list_item">one</li>
+            <li class="list_item">Two</li> 
+            <li class="list_item">Three</li>
+            <li class="list_item">Four</li>
+        </ul>
     </div>
+   
 </body>
+<script>
+    const newList=document.getElementsByClassName('list_item')
+    const newListArray=Array.from(newList)
+  newListArray.forEach((li)=>{
+         li.style.color="black"
+     })
+ const hc=document.querySelectorAll('h2')
+ hc.forEach((i)=>{if(i.className==="abc")
+              {
+                  i.style.color="red"
+              }
+             else{
+                 i.style.color="green";
+                 i.innerText="BSA College";
+                 i.style.fontSize="20px"
+             }
+ })
+ </script>
 </html>

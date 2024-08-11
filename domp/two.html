@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-two</title>
+    <style>
+        .bg-color
+        {
+            background-color: rgb(80, 75, 75);
+            color: rgb(206, 206, 195);
+        }
+        .para
+        {
+            color: rgb(209, 206, 36);
+        }
+    </style>
+</head>
+<body class="bg-color">
+</body>
+<script>
+    const div=document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id="myid"
+    // div.innerHTML="Hello My Div Section"
+    div.style.color="yellow"
+    const addText1=document.createTextNode("BSA COLLEGE MATHURA")
+    const addText2=document.createTextNode("BSA COLLEGE MATHURA")
+    
+    div.appendChild(addText1)
+    div.appendChild(addText2)
+    document.body.appendChild(div)
+    
+</script>
+</html>
